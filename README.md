@@ -37,3 +37,18 @@ sl commit
 # Opened VSCode
 # But it looks different from our usual git commit template
 
+# Here I realised that I can't see the branch in the VSCode / Terminal
+# Its annoying (-)
+# I wrote the issue about it here:
+# https://github.com/facebook/sapling/issues/472
+
+# I've tried to install Sapling SCM extension for my VSCode
+# But seems it doesn't provide any current branch info for my status bar / terminal (even built-in VScode terminal)
+
+sl
+# Check the history of commits
+# Really nice branch tree (+)
+
+sl push
+# Automatic push to `main` branch
+
