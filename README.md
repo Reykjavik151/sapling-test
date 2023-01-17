@@ -50,5 +50,20 @@ sl
 # Really nice branch tree (+)
 
 sl push
-# Automatic push to `main` branch
+# Automatic push to `main` branch (+)
+
+# I've added github actions to test and pushed it
+sl add .
+sl commit -m "feat: github actions"
+sl push
+
+# New branch creation (bookmark)
+sl bookmark feat/github-actions
+
+# Move to main / github-actions bookmarks
+sl goto main
+sl goto feat/github-actions
+
+# Check the history with UI
+sl web
 
