@@ -67,6 +67,28 @@ sl goto feat/github-actions
 # Check the history with UI
 sl web
 
+# I've created 4 new commits to check pr stacks
+echo "" >> README.md
+sl add .
+sl commit -m "1"
+# the same with 2 3 4
+
+sl pr submit
+# Failed because of auth
+# Requires 'gh auth login'
+
+gh auth login
+# GitHub.com
+# SSH
+# Skip
+# Login with a web browser
+# Success
+
+sl pr submit
+# Success - 4 PRs (+)
+# Naming PRs - `pr1` `pr2` `pr3` `pr4` (-)
+# but I don't see any GitHub actions that I've added before (-)
+# also I've noticed `sapling-pr-archive-Reykjavik151` branch (-)
 
 
 

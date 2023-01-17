@@ -3,8 +3,6 @@ name: Validate PR Title
 on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
-    branches:
-      - '!dependabot**'
 
 jobs:
   validate-pr-title:
